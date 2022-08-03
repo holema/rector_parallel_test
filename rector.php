@@ -13,4 +13,7 @@ return function (RectorConfig $rectorConfig): void {
         NetteSetList::ANNOTATIONS_TO_ATTRIBUTES,
         SensiolabsSetList::FRAMEWORK_EXTRA_61,
     ]);
+    $rectorConfig->paths([__DIR__ . '/src']);
+
+    $rectorConfig->disableParallel();
 };
